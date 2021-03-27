@@ -1,5 +1,5 @@
 #!/bin/bash
-SECRET=$(vault write -format=json pki_int/issue/consul-node common_name=localhost ttl=768h)
+SECRET=$(vault write -format=json pki_int/issue/consul-client common_name=localhost ttl=768h)
 
 FILE_NAME=$(uuidgen)
 
