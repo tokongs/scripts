@@ -11,5 +11,5 @@ echo $SECRET | jq -r '.data.private_key' > $FILE_NAME.key
 
 openssl pkcs12 -export -in $FILE_NAME.crt -inkey $FILE_NAME.key -out bundle.p12
 
-#rm $FILE_NAME.crt
-#rm $FILE_NAME.key
+rm $FILE_NAME.crt
+rm $FILE_NAME.key
